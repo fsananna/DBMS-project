@@ -1,6 +1,13 @@
 body{
     background-color: rgb(178, 233, 240);
 }
+
+.University{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .center {
     display: block;
     margin-left: auto;
@@ -8,23 +15,16 @@ body{
     height: 5em;
     width: 4em;
     padding: 3px 3px 3px;
+    margin-bottom: auto;
+    margin-right: auto;
 }
 
-@media screen and (max-width:600px)
-{
-    .uni-name ,.application-system{
-        font-size: 4vw;
-        align-content: center;
-       }
-        
-}
 .login-container{
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 20em;
     width:30em;
-    margin-top: 3em;
-    margin-left:33vw;
     border: .15vw solid black;
     background-color: azure;
     box-shadow: inset;
@@ -55,3 +55,19 @@ body{
 .login-form input[type="submit"]{
 margin-right: 1.5em;
 }
+
+@media screen and (max-width: 576px){
+     .University , .uni-name ,.application-system{
+        font-size: 4vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+    } 
+ @media screen and (min-width: 577px) and (max-width:992px){
+    .University,.uni-name ,.application-system{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+ }
