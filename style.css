@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(178, 233, 240);
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5em;
+    width: 4em;
+    padding: 3px 3px 3px;
+}
+
+@media screen and (max-width:600px)
+{
+    .uni-name ,.application-system{
+        font-size: 4vw;
+        align-content: center;
+       }
+        
+}
+.login-container{
+    display: flex;
+    justify-content: center;
+    height: 20em;
+    width:30em;
+    margin-top: 3em;
+    margin-left:33vw;
+    border: .15vw solid black;
+    background-color: azure;
+    box-shadow: inset;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+}
+.login-form input{
+    margin-top: 2.5em;
+    font-weight: 1.5em;
+    padding: 5px 10px;
+}
+.login-form input[type="submit"], input[type="reset"]{
+   
+  background-color: rgb(73, 129, 234);  
+  border: 4ch;
+  border-radius: 4px;
+  color: whitesmoke;
+  font-weight: 800;
+
+}
+
+.login {
+    display: flex;
+}
+.login-form input[type="submit"]{
+margin-right: 1.5em;
+}
